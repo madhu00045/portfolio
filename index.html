@@ -27,134 +27,304 @@
   </header> 
 
   <!------------------ HERO SECTION -------------------->
- 
   <section id="hero"> 
-    <div class="hero-content"> 
-      <h1>Hi, I'm Madhusudhan reddy</h1> 
-      <p>Creative Front-End Developer</p> 
-      <img src="./images/WhatsApp Image 2025-08-10 at 12.25.24.jpeg.jpg" alt="Profile" class="hero-pic" /> 
-      <a href="#projects" class="btn">Explore Projects</a> 
-    </div> 
-  </section> 
+  <div class="hero-container">
+    <!-- Left Content -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Madhusudhan Reddy</span></h1> 
+      <h2>Creative Front-End Developer</h2> 
+      <p class="intro-text">
+        Passionate about building modern, responsive, and user-friendly web applications. 
+        I specialize in turning ideas into functional digital solutions using 
+        <b>HTML, CSS, JavaScript, PHP, SQL, Python</b> and more.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Explore Projects</a> 
+        <a href="#contact" class="btn hire-btn">Hire Me</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/madhu00045" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/madhusudhan-reddy-623161343/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="hero-img">
+      <img src="./images/WhatsApp Image 2025-08-10 at 12.25.24.jpeg.jpg" alt="Profile" />
+    </div>
+  </div>
+</section>
 
   <!------------------ ABOUT SECTION -------------------->
- 
   <section id="about"> 
-    <h2>About Me</h2> 
-    <p>I'm Madhusudhan reddy, a dedicated and enthusiastic front-end developer with a strong background in CSE (AI & DS) from Veltech University. I specialize in creating responsive, user-friendly web interfaces that blend design with functionality. My passion lies in turning ideas into digital experiences using modern technologies like HTML, CSS, JavaScript, SQL, and PHP. I enjoy problemsolving and continuously learning to stay ahead in the evolving tech landscape. With a keen eye for detail, I aim to deliver clean, scalable, and performance-driven code.</p> 
-  </section> 
+  <h2>About Me</h2> 
+  <div class="about-container">
+    
+    <!-- About Text -->
+    <div class="about-text">
+      <h3>Who Am I?</h3>
+      <p>
+        I'm <span class="highlight">Madhusudhan Reddy</span>, a 
+        <b>Front-End Developer</b> passionate about creating 
+        <b>modern, responsive</b>, and <b>user-friendly web applications</b>.  
+        With a strong foundation in <b>CSE (AI & DS)</b>, I enjoy blending 
+        design and functionality to deliver seamless digital experiences.
+      </p>
+      <p>
+        I’m constantly exploring <b>new technologies</b> and refining my 
+        problem-solving skills to stay ahead in the fast-paced tech world.
+      </p>
+
+       <div class="about-content">
+        <!-- Key Highlights -->
+        <div class="about-list">
+          <h3>Key Highlights</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Proficient in HTML, CSS, JavaScript, PHP, SQL</li>
+            <li><i class="fas fa-check-circle"></i> Strong foundation in Python & C++</li>
+            <li><i class="fas fa-check-circle"></i> Skilled in Bootstrap & React</li>
+            <li><i class="fas fa-check-circle"></i> Passion for clean & scalable code</li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="about-education">
+          <h3>Education</h3>
+          <ul>
+            <li><i class="fas fa-graduation-cap"></i> <b>B.Tech in CSE (AI & DS)</b> – [Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology]</li>
+            <li><i class="fas fa-school"></i> <b>Intermediate</b> – [Krishna reddy & Siddartha junior college]</li>
+            <li><i class="fas fa-book-reader"></i> <b>High School</b> – [Gnanodhaya High School>]</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="about-buttons">
+        <a href="./resume.pdf" target="_blank" class="btn">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Let’s Connect</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!------------------ SKILLS SECTION -------------------->
  
-  <section id="skills"> 
-  <h2 class="section-title">Skills</h2> 
-  <div class="skills-grid"> 
-    <div class="skill-card"> 
-      <i class="fab fa-html5"></i> 
-      <h3>HTML</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fab fa-css3-alt"></i> 
-      <h3>CSS</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fab fa-js"></i> 
-      <h3>JavaScript</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fab fa-php"></i> 
-      <h3>PHP</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fas fa-database"></i> 
-      <h3>SQL</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fas fa-code"></i> 
-      <h3>C</h3> 
-    </div> 
-    <div class="skill-card"> 
-      <i class="fab fa-python"></i> 
-      <h3>Python</h3> 
-    </div> 
-  </div> 
-</section> 
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <div class="circle" data-percent="95">
+         <svg>
+           <circle cx="60" cy="60" r="54"></circle>
+           <circle cx="60" cy="60" r="54"></circle>
+         </svg>
+         <div class="number">95%</div>
+        </div>
+        <h4>HTML & CSS</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">85%</div>
+        </div>
+        <h4>JavaScript</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">85%</div>
+        </div>
+        <h4>Php</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">80%</div>
+        </div>
+        <h4>C++</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">85%</div>
+        </div>
+        <h4>Python</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">85%</div>
+        </div>
+        <h4>Boostrap</h4>
+      </div>
+
+
+      <div class="skill-card">
+        <div class="circle" data-percent="75">
+          <svg>
+           <circle cx="60" cy="60" r="54"></circle>
+           <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="number">75%</div>
+        </div>
+        <h4>React</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="circle" data-percent="80">
+          <svg>
+           <circle cx="60" cy="60" r="54"></circle>
+           <circle cx="60" cy="60" r="54"></circle>
+          </svg>
+         <div class="number">80%</div>
+        </div>
+        <h4>Git & Workflow</h4>
+      </div>
+    </div>
+    </section>
 
   <!------------------ PROJECTS SECTION --------------------> 
  
-  <section id="projects" class="projects-section"> 
+<section id="projects" class="projects-section"> 
   <h2 class="section-title">My Projects</h2> 
   <div class="projects-grid"> 
+    
+    <!-- Project 1 -->
     <div class="project-card"> 
       <img src="./images/photo-1662947190722-5d272f82a526.jpeg.jpg" alt="Google Page"> 
       <h3>Google Page</h3> 
-      <a href=" https://madhu00045.github.io/google-page/" target="_blank">View Project</a> 
+      <p>A simple clone of Google’s homepage with search bar styling and responsive layout.</p>
+      <p><b>Tech Used:</b> HTML, CSS</p>
+      <a href="https://madhu00045.github.io/google-page/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 2 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-16 214950.png" alt="Banner"> 
       <h3>Banner</h3> 
-      <a href=" https://madhu00045.github.io/banner/" target="_blank">View Project</a> 
+      <p>A creative banner design with modern typography and background styling.</p>
+      <p><b>Tech Used:</b> HTML, CSS</p>
+      <a href="https://madhu00045.github.io/banner/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 3 -->
     <div class="project-card"> 
       <img src="./images/OIP.webp" alt="Restaurant"> 
       <h3>Restaurant</h3> 
-      <a href=" https://madhu00045.github.io/restaurant/" target="_blank">View Project</a> 
+      <p>A restaurant website showcasing menu, offers, and a responsive layout.</p>
+      <p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
+      <a href="https://madhu00045.github.io/restaurant/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 4 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-16 215417.png" alt="Navbar"> 
       <h3>Navbar</h3> 
-      <a href=" https://madhu00045.github.io/navbar/" target="_blank">View Project</a> 
+      <p>A modern responsive navigation bar with hover effects and dropdown options.</p>
+      <p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
+      <a href="https://madhu00045.github.io/navbar/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 5 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-16 215848.png" alt="Image Slider"> 
       <h3>Image Slider</h3> 
-      <a href=" https://madhu00045.github.io/js-slider/" target="_blank">View Project</a> 
+      <p>A JavaScript image slider with autoplay and manual navigation controls.</p>
+      <p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
+      <a href="https://madhu00045.github.io/js-slider/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 6 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-16 220415.png" alt="Cards section"> 
-      <h3>JS Counter</h3> 
+      <h3>Cards Section</h3> 
+      <p>A modern cards layout showcasing information with clean UI.</p>
+      <p><b>Tech Used:</b> HTML, CSS</p>
       <a href="https://madhu00045.github.io/cards-section/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 7 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-16 220058.png" alt="JS Counter Sizing"> 
       <h3>JS Counter Sizing</h3> 
-      <a href=" https://madhu00045.github.io/js-counters/" target="_blank">View Project</a> 
+      <p>A counter app built with JavaScript to increment/decrement values.</p>
+      <p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
+      <a href="https://madhu00045.github.io/js-counters/" target="_blank">View Project</a> 
     </div> 
+    
+    <!-- Project 8 -->
     <div class="project-card"> 
       <img src="./images/Screenshot 2025-09-09 095649.png" alt="Wedding planner website"> 
-      <h3>Wedding planner website</h3> 
-      <a href=" https://madhu00045.github.io/wedding-planner/" target="_blank">view project</a> 
-  <p></p> 
+      <h3>Wedding Planner Website</h3> 
+      <p>A wedding planner site featuring event details, packages, and a gallery.</p>
+      <p><b>Tech Used:</b> HTML, CSS, JavaScript, Bootstrap</p>
+      <a href="https://madhu00045.github.io/wedding-planner/" target="_blank">View Project</a> 
     </div> 
+
   </div> 
-  </section>
+</section>
+
   
   <!------------------ CONTACT SECTION -------------------->
 
-  <section id="contact"> 
-      <h2 class="section-title">Contact Me</h2> 
-      <p class="contact-subtitle">I'd love to hear from you! Whether it's a project, job opportunity, or just a chat.</p> 
-    <div class="contact-container"> 
-        <form class="contact-form"> 
-          <input type="text" placeholder="Your Name" required /> 
-          <input type="email" placeholder="Your Email" required /> 
-          <textarea rows="5" placeholder="Your Message" required></textarea> 
-          <button type="submit">Send Message</button> 
-        </form> 
+ <section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Madanapalli, India</p>
+      <p><i class="fas fa-envelope"></i> dmadhusudhanreddy185@email.com</p>
+      <p><i class="fas fa-phone-alt"></i> +91 6309828194</p>
+      <p><i class="fas fa-globe"></i> www.yourportfolio.com</p>
     </div>
-  </section> 
+
+    <!-- Right Side: Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
 
 <!------------------ FOOTER SECTION -------------------->
 
   <footer> 
-      <p>&copy; 2025 Madhusudhan reddy. All rights reserved.</p> 
+      <p>&copy; 2025 Madhusudhan Reddy. All rights reserved.</p> 
     <div class="socials"> 
-      <a href="https://github.com/madhu00045?tab=repositories" target="_blank"><i class="fab fa-github"></i></a> 
-      <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+      <a href="https://github.com/madhu00045" target="_blank"><i class="fab fa-github"></i></a> 
+      <a href="https://www.linkedin.com/in/madhusudhan-reddy-623161343/" target="_blank"><i class="fab fa-linkedin"></i></a> 
     </div> 
   </footer> 
 
 <script src="./js/script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body> 
 </html>

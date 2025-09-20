@@ -30,47 +30,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ---------------- CONTACT FORM SAVE & DISPLAY ----------------
-const contactForm = document.querySelector(".contact-form");
-const contactContainer = document.querySelector("#contact .contact-container");
+// ------------------- ANIMATED SKILLS ------------------------
+function animateSkills() {
+  document.querySelectorAll(".circle").forEach(circle => {
+    let percent = circle.getAttribute("data-percent");
+    let number = circle.querySelector(".number");
 
-// Create a display area for saved messages
-let messagesBox = document.createElement("div");
-messagesBox.classList.add("messages-box");
-contactContainer.appendChild(messagesBox);
+    circle.style.setProperty("--percent", percent);
 
-// Load saved messages on page load
-function loadMessages() {
-  const saved = JSON.parse(localStorage.getItem("messages")) || [];
-  messagesBox.innerHTML = "<h3>Saved Messages</h3>";
-  saved.forEach((msg, index) => {
-    messagesBox.innerHTML += `
-      <div class="msg">
-        <p><strong>${msg.name}</strong> (${msg.email})</p>
-        <p>${msg.message}</p>
-        <hr>
-      </div>
-    `;
+    // Animate number counting
+    let count = 0;
+    let interval = setInterval(() => {
+      if (count >= percent) {
+        clearInterval(interval);
+      } else {
+        count++;
+        number.textContent = count + "%";
+      }
+    }, 20);
   });
 }
-loadMessages();
 
-// Save new message
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+// Trigger animation when skills section is visible
+const skillsSection = document.querySelector("#skills");
+let skillsAnimated = false;
 
-  const name = contactForm.querySelector('input[type="text"]').value;
-  const email = contactForm.querySelector('input[type="email"]').value;
-  const message = contactForm.querySelector("textarea").value;
-
-  if (name && email && message) {
-    const saved = JSON.parse(localStorage.getItem("messages")) || [];
-    saved.push({ name, email, message });
-    localStorage.setItem("messages", JSON.stringify(saved));
-    contactForm.reset();
-    loadMessages();
-    alert("✅ Message saved locally!");
-  } else {
-    alert("⚠️ Please fill all fields");
+window.addEventListener("scroll", () => {
+  const sectionTop = skillsSection.offsetTop - 300;
+  if (window.scrollY >= sectionTop && !skillsAnimated) {
+    animateSkills();
+    skillsAnimated = true;
   }
+});
+
+// ✅ EmailJS Contact Form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Replace these with your EmailJS details
+    emailjs.init("j5Lvaxd1G84x4_avx"); // 🔑 From EmailJS dashboard
+
+    emailjs.sendForm("service_5gm9x1w", "template_4e6x8yn", form)
+      .then(function () {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      }, function (error) {
+        alert("❌ Failed to send message. Please try again.\n" + JSON.stringify(error));
+      });
+  });
 });
